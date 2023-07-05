@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "appointments",
+  "info": {
+    "singularName": "appointment",
+    "pluralName": "appointments",
+    "displayName": "Appointments"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "symptoms": {
+      "type": "text"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "aptstatus": {
+      "type": "string"
+    },
+    "aptdate": {
+      "type": "string"
+    },
+    "patientid": {
+      "type": "biginteger"
+    },
+    "doctorid": {
+      "type": "biginteger"
+    },
+    "diagnosis": {
+      "type": "text"
+    },
+    "commentsbydoc": {
+      "type": "text"
+    },
+    "presc": {
+      "type": "text"
+    }
+  }
+}

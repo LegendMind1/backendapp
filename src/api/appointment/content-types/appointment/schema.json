@@ -4,7 +4,8 @@
   "info": {
     "singularName": "appointment",
     "pluralName": "appointments",
-    "displayName": "Appointments"
+    "displayName": "Appointments",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -37,6 +38,9 @@
     },
     "presc": {
       "type": "text"
+    },
+    "docname": {
+      "type": "string"
     }
   }
 }

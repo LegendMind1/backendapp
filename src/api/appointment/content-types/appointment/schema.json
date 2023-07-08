@@ -41,6 +41,9 @@
     },
     "docname": {
       "type": "string"
+    },
+    "patname": {
+      "type": "string"
     }
   }
 }

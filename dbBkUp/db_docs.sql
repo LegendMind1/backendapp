@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 08, 2023 at 04:14 PM
+-- Generation Time: Jul 09, 2023 at 11:06 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -346,7 +346,10 @@ INSERT INTO `appointments` (`id`, `symptoms`, `desc`, `aptstatus`, `aptdate`, `p
 (15, 'Headache', 'Not well Truly', 'REGRETTED', 'Wed Jul 19 2023', 37, 18, NULL, NULL, NULL, '2023-07-08 17:16:32.057000', '2023-07-08 19:05:33.785000', '2023-07-08 17:16:32.054000', NULL, NULL, 'mr. cc', NULL),
 (16, 'Heart Pepation', 'Not well Truly', 'BOOKED', 'Fri Jul 21 2023', 37, 18, NULL, NULL, NULL, '2023-07-08 17:32:05.661000', '2023-07-08 19:08:26.837000', '2023-07-08 17:32:05.656000', NULL, NULL, 'mr. cc', NULL),
 (17, 'Heart Pepation', 'Not well Truly', 'REGRETTED', 'Fri Jul 21 2023', 37, 18, NULL, NULL, NULL, '2023-07-08 17:38:37.935000', '2023-07-08 18:59:06.906000', '2023-07-08 17:38:37.933000', NULL, NULL, 'mr. cc', NULL),
-(18, 'Headache, Fever', 'Not well Truly', 'BOOKED', 'Wed Jul 19 2023', 37, 18, NULL, NULL, NULL, '2023-07-08 17:40:50.653000', '2023-07-08 18:50:09.495000', '2023-07-08 17:40:50.648000', NULL, NULL, 'mr. cc', 'Support');
+(18, 'Headache, Fever', 'Not well Truly yeah...', 'Attended', 'Wed Jul 19 2023', 37, 18, 'Death Sentence noooo', 'Very sad story man', 'Paracetamol Plus Plus Plus', '2023-07-08 17:40:50.653000', '2023-07-09 19:49:17.039000', '2023-07-08 17:40:50.648000', NULL, NULL, 'mr. cc', 'Support'),
+(19, 'Fever, Headache', 'Not well', 'REQUESTED', 'Fri Jul 21 2023', 46, 18, NULL, NULL, NULL, '2023-07-08 20:04:49.142000', '2023-07-08 20:04:49.142000', '2023-07-08 20:04:49.140000', NULL, NULL, 'mr. cc', 'Roomi'),
+(20, 'Fever, Stomachache, Hallucination, Dizziness, Tooth Ache', 'Zack is not well... janab', 'Attended', 'Tue Jul 25 2023', 47, 18, 'Death Sentence asdasd', 'Very sad story man asdas', 'Paracetamol Plus', '2023-07-08 21:17:31.275000', '2023-07-09 19:29:35.582000', '2023-07-08 21:17:31.269000', NULL, NULL, 'mr. cc', 'zack'),
+(21, 'Fatigue, Headache, Stomachache, Weakness in Muscles, Nausea, Cramps', 'Roomi is not well today... again', 'BOOKED', 'Thu Jul 27 2023', 46, 48, NULL, NULL, NULL, '2023-07-08 21:50:59.740000', '2023-07-08 21:52:20.869000', '2023-07-08 21:50:59.732000', NULL, NULL, 'Dr. Tankana', 'Roomi');
 
 -- --------------------------------------------------------
 
@@ -374,7 +377,8 @@ CREATE TABLE `doctors` (
 INSERT INTO `doctors` (`id`, `doctor_name`, `created_at`, `updated_at`, `published_at`, `created_by_id`, `updated_by_id`, `doctor_email`, `userid`, `specl`) VALUES
 (3, 'mr. cc', '2023-07-06 19:50:33.307000', '2023-07-06 19:50:33.307000', '2023-07-06 19:50:33.295000', NULL, NULL, 'cc@cc.com', 18, NULL),
 (4, 'yoshizz', '2023-07-08 12:33:53.513000', '2023-07-08 12:33:53.513000', '2023-07-08 12:33:53.509000', NULL, NULL, 'zz@zz.com', 44, NULL),
-(5, 'John Smith', '2023-07-08 12:35:46.532000', '2023-07-08 12:35:46.532000', '2023-07-08 12:35:46.530000', NULL, NULL, 'aa@aa.com', 45, NULL);
+(5, 'John Smith', '2023-07-08 12:35:46.532000', '2023-07-08 12:35:46.532000', '2023-07-08 12:35:46.530000', NULL, NULL, 'aa@aa.com', 45, NULL),
+(6, 'Dr. Tankana', '2023-07-08 21:40:49.573000', '2023-07-08 21:40:49.573000', '2023-07-08 21:40:49.570000', NULL, NULL, 'tt@tt.com', 48, NULL);
 
 -- --------------------------------------------------------
 
@@ -485,7 +489,9 @@ INSERT INTO `patients` (`id`, `patient_name`, `patient_email`, `patient_age`, `c
 (5, 'Imtiaz', 'imtiaz@imtiaz.com', '44', '2023-06-19 11:59:29.023000', '2023-07-02 23:31:04.923000', 1, 1, 65, '2023-06-19 11:59:29.023000'),
 (50, 'yoshi', 'legendmindyt@gmail.com', '90', '2023-07-02 22:10:48.395000', '2023-07-02 22:10:48.395000', NULL, NULL, 38, '2023-07-02 22:10:48.380000'),
 (51, 'zip line', 'hassaanalvi47@gmail.com', '45', '2023-07-02 22:32:02.940000', '2023-07-02 22:32:02.940000', NULL, NULL, 43, '2023-07-02 22:32:02.934000'),
-(52, 'Support', 'qq@qq.com', '45', '2023-07-02 23:31:11.014000', '2023-07-02 23:31:11.014000', NULL, NULL, 37, '2023-07-02 23:31:11.008000');
+(52, 'Support', 'qq@qq.com', '45', '2023-07-02 23:31:11.014000', '2023-07-02 23:31:11.014000', NULL, NULL, 37, '2023-07-02 23:31:11.008000'),
+(67, 'Roomi', 'rr@rr.com', '27', '2023-07-08 20:07:32.591000', '2023-07-08 20:07:32.591000', NULL, NULL, 46, '2023-07-08 20:07:32.589000'),
+(68, 'zack', 'ss@ss.com', '45', '2023-07-08 21:16:30.682000', '2023-07-08 21:16:30.682000', NULL, NULL, 47, '2023-07-08 21:16:30.674000');
 
 -- --------------------------------------------------------
 
@@ -928,7 +934,10 @@ INSERT INTO `up_users` (`id`, `username`, `email`, `provider`, `password`, `rese
 (42, 'GT Admin', 'spaceisnotnull@gmail.com', 'local', '$2a$10$9iu7X5xeOAvaLiiK7nsZleKndnN9T5X76FVfjfsQK5N6e072v8x72', NULL, NULL, 1, 0, '2023-07-02 06:55:47.398000', '2023-07-02 06:55:47.398000', NULL, NULL, 'doctor'),
 (43, 'zip line', 'hassaanalvi47@gmail.com', 'local', '$2a$10$xCELsnzvXZgaS0EEu91t9ud/DR0WPhuzo9GQBC6OOY5m8/3BzKnjS', NULL, NULL, 1, 0, '2023-07-02 22:31:32.354000', '2023-07-02 22:31:32.354000', NULL, NULL, 'patient'),
 (44, 'yoshizz', 'zz@zz.com', 'local', '$2a$10$8JlQcMY5DOMSO6sEhRldeuSCgYUKxJI.DRNNbk.xEZbPUuvFeeu.G', NULL, NULL, 1, 0, '2023-07-08 12:33:02.813000', '2023-07-08 12:33:02.813000', NULL, NULL, 'doctor'),
-(45, 'John Smith', 'aa@aa.com', 'local', '$2a$10$uH099.lr4HBLRSW5Px1hueJD/gXsJxESdZH.El9e8/lMlwdm71B3e', NULL, NULL, 1, 0, '2023-07-08 12:35:07.471000', '2023-07-08 12:35:07.471000', NULL, NULL, 'doctor');
+(45, 'John Smith', 'aa@aa.com', 'local', '$2a$10$uH099.lr4HBLRSW5Px1hueJD/gXsJxESdZH.El9e8/lMlwdm71B3e', NULL, NULL, 1, 0, '2023-07-08 12:35:07.471000', '2023-07-08 12:35:07.471000', NULL, NULL, 'doctor'),
+(46, 'Roomi', 'rr@rr.com', 'local', '$2a$10$/f.CH7DMoI9tbUlpds5cvuwoMPDW5zKGqTbaHNPzQx2IrFdtL0xPK', NULL, NULL, 1, 0, '2023-07-08 19:56:53.779000', '2023-07-08 19:56:53.779000', NULL, NULL, 'patient'),
+(47, 'zack', 'ss@ss.com', 'local', '$2a$10$m4fhW2lMKtyg580RfqgPB.LT.V8FRQepicxL1x961Leo.xU/dShRa', NULL, NULL, 1, 0, '2023-07-08 21:12:54.319000', '2023-07-08 21:12:54.319000', NULL, NULL, 'patient'),
+(48, 'Dr. Tankana', 'tt@tt.com', 'local', '$2a$10$Im1oYy4Sy5qN/vmDSBz2KOplDt0MUeU7bEvCZvfSYyJNnrFUlxODy', NULL, NULL, 1, 0, '2023-07-08 21:33:30.222000', '2023-07-08 21:33:30.222000', NULL, NULL, 'doctor');
 
 -- --------------------------------------------------------
 
@@ -955,7 +964,10 @@ INSERT INTO `up_users_role_links` (`id`, `user_id`, `role_id`, `user_order`) VAL
 (42, 42, 1, 6),
 (43, 43, 1, 7),
 (44, 44, 1, 8),
-(45, 45, 1, 9);
+(45, 45, 1, 9),
+(46, 46, 1, 10),
+(47, 47, 1, 11),
+(48, 48, 1, 12);
 
 --
 -- Indexes for dumped tables
@@ -1249,13 +1261,13 @@ ALTER TABLE `admin_users_roles_links`
 -- AUTO_INCREMENT for table `appointments`
 --
 ALTER TABLE `appointments`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `doctors`
 --
 ALTER TABLE `doctors`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `files`
@@ -1285,7 +1297,7 @@ ALTER TABLE `i18n_locale`
 -- AUTO_INCREMENT for table `patients`
 --
 ALTER TABLE `patients`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=67;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=69;
 
 --
 -- AUTO_INCREMENT for table `strapi_api_tokens`
@@ -1381,13 +1393,13 @@ ALTER TABLE `up_roles`
 -- AUTO_INCREMENT for table `up_users`
 --
 ALTER TABLE `up_users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 
 --
 -- AUTO_INCREMENT for table `up_users_role_links`
 --
 ALTER TABLE `up_users_role_links`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 
 --
 -- Constraints for dumped tables
